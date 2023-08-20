@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "preinstall": "pnpm dlx only-allow pnpm",
+    "app:web": "pnpm -F web",
+    "pack:ui": "pnpm -F ui"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{ts,tsx,md}": "prettier --write"
+  }
+}
