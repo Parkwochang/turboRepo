@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "build:test": "turbo run build --filter=test...",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "clean": "turbo clean",

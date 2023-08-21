@@ -14,6 +14,16 @@
         "!.next/cache/**"
       ]
     },
+    "test#build": {
+      "dependsOn": [
+        "^build",
+        "$DOCS_URL"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
     "lint": {},
     "check-types": {},
     "dev": {
