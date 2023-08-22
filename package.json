@@ -3,9 +3,10 @@
   "scripts": {
     "build": "turbo build",
     "build:test": "turbo run build --filter=test...",
+    "make-graph": "turbo run build lint --graph",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "clean": "turbo clean",
+    "clean": "turbo clean && rm -rf ./node_modules/.cache/turbo",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start": "turbo start",
     "web": "pnpm -F web",
