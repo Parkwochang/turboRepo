@@ -3,6 +3,7 @@
   "scripts": {
     "build": "turbo build",
     "build:test": "turbo run build --filter=test...",
+    "build:t3": "turbo run build --filter=t3...",
     "make-graph": "turbo run build lint --graph",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -10,6 +11,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start": "turbo start",
     "web": "pnpm -F web",
+    "t3": "pnpm -F t3",
+    "docs": "pnpm -F docs",
     "front": "pnpm -F test",
     "prepare": "husky install"
   },
