@@ -7,7 +7,7 @@ import "~/styles/globals.css";
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
-}) => {
+}: any) => {
   return (
     <SessionProvider session={session}>
       <Component {...pageProps} />
