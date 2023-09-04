@@ -22,6 +22,7 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "husky": "^8.0.3",
+    "hygen": "^6.2.11",
     "lint-staged": "^14.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
